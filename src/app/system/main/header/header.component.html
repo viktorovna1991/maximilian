@@ -1,0 +1,27 @@
+<div class="header-block">
+  <div class="left-block">
+    <img src="../assets/logo.jpg" alt="logo">
+  </div>
+
+  <div class="right-block" *ngIf="!isMobile">
+    <a href="#qualities" class="header-text">преимущества</a>
+    <a href="#tariff" class="header-text">тарифы</a>
+    <a href="#contacts" class="header-text">контакты</a>
+  </div>
+
+  <div class="body" *ngIf="isMobile">
+    <input type="checkbox"  class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <div class="main-content-wrapper">
+        <a href="#qualities">преимущества</a>
+        <a href="#tariff">тарифы</a>
+        <a href="#contacts">контакты</a>
+      </div>
+    </div>
+  </div>
+</div>

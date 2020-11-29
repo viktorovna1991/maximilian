@@ -1,0 +1,41 @@
+<div class="tariff" id="tariff">
+  <h1 class="tariff-title" [ngClass]="{'card-title-mobile' : innerWidth < '360', 'card-title':  innerWidth > '360'}">Тарифы</h1>
+  <div [ngClass]="{'cards-mobile' : innerWidth < '760', 'cards':  innerWidth > '760'}">
+    <div class="card">
+      <h3 class="card-title">Персональные тренировки</h3>
+      <h5 class="card-descriptor">55 минут непрерывного движения  под полным контролем тренера, индивидуальный подход</h5>
+      <div class="sums">
+        <p> 1 тренировка <span>1 800р.</span></p>
+        <p> 8 тренировок <span>13 000р.</span></p>
+        <p style="padding-bottom: 30px"> 12 тренировок <span>18 000р.</span></p>
+      </div>
+      <button class="inscribe" >
+        <a href="#contacts" class="header-text">Записаться</a>
+      </button>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Сплит тренировки</h3>
+      <h5 class="card-descriptor">55 минут интенсивной тренировки, которая приведет тебя к желаемому результату</h5>
+      <div class="sums">
+        <p> 1 тренировка <span>3 000р.</span></p>
+        <p style="padding-bottom: 60px"> 8 тренировок <span>20 800р.</span></p>
+      </div>
+      <button class="inscribe" >
+        <a href="#contacts" class="header-text">Записаться</a>
+      </button>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Групповые тренировки</h3>
+      <h5 class="card-descriptor">55 минут работы в группе под присмотром опытных специалистов</h5>
+      <div class="sums">
+        <p> 1 тренировка <span>650р.</span></p>
+        <p> 8 тренировок <span>3 500р.</span></p>
+        <p> 12-14 тренировок <span>4 800р.</span></p>
+        <p> Пробное занятие <span>400р.</span></p>
+      </div>
+      <button class="inscribe">
+        <a href="#contacts" class="header-text">Записаться</a>
+      </button>
+    </div>
+  </div>
+</div>

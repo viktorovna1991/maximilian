@@ -1,0 +1,7 @@
+<app-header></app-header>
+<app-men></app-men>
+<app-coach></app-coach>
+<app-women></app-women>
+<app-contacts></app-contacts>
+<app-footer></app-footer>
+<button [ngClass]="{'back-mobile' : innerWidth < '560', 'back':  innerWidth > '560'}" (click)="onClick($event, 'main')"><mat-icon>reply</mat-icon></button>

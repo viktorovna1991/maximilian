@@ -1,0 +1,13 @@
+<div class="wrapper-carousel">
+  <div id="gallery">
+    <ul>
+      <li *ngFor="let photo of photoItems">
+        <img src="{{photo.image}}">
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper-buttons">
+  <button type="button" id="prev" class="inscribe" (click)="onChangeItem($event)"> < </button>
+  <button type="button" id="next" class="inscribe" (click)="onChangeItem($event)"> > </button>
+</div>

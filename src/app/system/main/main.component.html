@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="main-center">
+  <div class="transparent-line"></div>
+  <img src="../assets/principal.png" alt="gym-girls">
+  <div class="yellow-line">
+    <h1 class="descriptor">Персональные и групповые тренировки для детей и взрослых</h1>
+  </div>
+<div class="button-group">
+  <button   (click)="onClick($event, 'gender')">
+    Для мужчин
+  </button>
+  <button  (click)="onClick($event, 'fitness')">
+    Для женщин
+  </button>
+  <button  (click)="onClick($event, 'children')">
+    Для детей
+  </button>
+</div>
+</div>
+
+<app-qualities></app-qualities>
+<app-tariff></app-tariff>
+<app-about-us></app-about-us>
+<app-contacts></app-contacts>
+<app-footer></app-footer>
+
+

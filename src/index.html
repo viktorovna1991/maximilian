@@ -5,9 +5,40 @@
   <title>PoPlechy</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevaC4LbydMpT3k88tUyuJlld6gFVtR8o"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>(function () {
+    var setting = {
+      "height": 540,
+      "width": 725,
+      "zoom": 17,
+      "queryString": "улица Сколковская, 5А, Одинцово, Россия",
+      "place_id": "ChIJ8Q6ky_1PtUYRHRxpQzZwx3c",
+      "satellite": false,
+      "centerCoord": [55.69776027327773, 37.32240959999998],
+      "cid": "0x77c7703643691c1d",
+      "lang": "ru",
+      "cityUrl": "/russia/krasnogorsk-51741",
+      "cityAnchorText": "Карта [CITY1], Central Federal District, Россия",
+      "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+      "embed_id": "298012"
+    };
+    var d = document;
+    var s = d.createElement('script');
+    s.src = 'https://1map.com/js/script-for-user.js?embed_id=298012';
+    s.async = true;
+    s.onload = function (e) {
+      window.OneMap.initMap(setting)
+    };
+    var to = d.getElementsByTagName('script')[0];
+    to.parentNode.insertBefore(s, to);
+  })();</script>
+
+
 </head>
-<body>
+<body class="mat-typography">
   <app-root></app-root>
 </body>
 </html>

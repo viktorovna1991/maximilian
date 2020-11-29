@@ -1,0 +1,107 @@
+.coach {
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+}
+
+.coach1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.coach h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 30px 0 20px;
+
+}
+
+.kirill, .anna, .marina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 31%;
+}
+
+.kirill-mobile, .anna-mobile, .marina-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+.jump {
+  opacity: 0.1;
+  float: left;
+}
+
+.photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descriptor-block-mobile, .photo-mobile {
+  //width: 80%;
+}
+
+.descriptor-block-mobile {
+  max-height: available;
+}
+
+.descriptor-block {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 0 13px 30px;
+}
+
+h3.name {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.descriptor {
+  //padding-left: 20%;
+}
+
+.descriptor-mobile {
+  padding-left: 0;
+  padding-bottom: 20px;
+  max-width: 300px;
+}
+
+img {
+  max-height: 410px;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+
+.descriptor h3, .descriptor-mobile h3 {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+
+.descriptor h5, .descriptor-mobile h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.descriptor p, .descriptor-mobile p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 3px 0;
+}
+
