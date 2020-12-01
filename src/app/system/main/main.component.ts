@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -7,9 +7,15 @@ import {Router} from '@angular/router';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  innerWidth: any;
+  @HostListener('window:resize', ['$event'])
+  onResize(event): void {
+    this.innerWidth = window.innerWidth;
+  }
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
   }
 
   onClick(event, path): void {

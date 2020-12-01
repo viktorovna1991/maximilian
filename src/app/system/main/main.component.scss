@@ -16,7 +16,7 @@
   position: absolute;
   top: 30%;
   transform: translateY(-50%);
-  height: 28%;
+  height: 29%;
   width: 100%;
   background-color: #4544582e;
 
@@ -42,12 +42,22 @@ p {
 }
 
 h1.descriptor {
-  font-size: 40px;
+  font-size: 39px;
   font-weight: bold;
   text-transform: uppercase;
   max-width: 700px;
   line-height: 1.1;
   padding-left: 10%;
+}
+
+h1.descriptor-mobile {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: 700px;
+  line-height: 1;
+  padding-left: 9%;
+  padding-right: 6%;
 }
 
 @keyframes draw {

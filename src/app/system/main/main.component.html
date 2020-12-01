@@ -3,7 +3,7 @@
   <div class="transparent-line"></div>
   <img src="../assets/principal.png" alt="gym-girls">
   <div class="yellow-line">
-    <h1 class="descriptor">Персональные и групповые тренировки для детей и взрослых</h1>
+    <h1 [ngClass]="{'descriptor-mobile' : innerWidth < '560', 'descriptor':  innerWidth > '560'}">Персональные и групповые тренировки для детей и взрослых</h1>
   </div>
 <div class="button-group">
   <button   (click)="onClick($event, 'gender')">
